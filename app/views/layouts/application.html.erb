@@ -2,16 +2,24 @@
 <html>
   <head>
     <title>Todomemos</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <% if flash[:notice] %>
+    <!-- ここにclassを追加する -->
+    <div class="alert alert-info"><%= flash[:notice] %></div>
+  <% end %>
+  <% if flash[:alert] %>
+    <!-- ここにclassを追加する -->
+    <div class="alert alert-danger"><%= flash[:alert] %></div>
+  <% end %>
     <% if user_signed_in? %>
-      <p><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></p>
+      <%= render partial: 'layouts/header' %>
     <% end %>
     <%= yield %>
   </body>

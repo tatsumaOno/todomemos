@@ -1,0 +1,17 @@
+.container{
+  color:#6D757D;
+  .h2{
+    color: orange;
+  }
+  width: 500px;
+  margin: 0 auto;
+  .form-group{
+    margin: 20px auto;
+    input{
+      &:focus{
+        border: 1px solid orange;
+        box-shadow: 0 0 0 0 ;
+      }
+    }
+  }
+}
