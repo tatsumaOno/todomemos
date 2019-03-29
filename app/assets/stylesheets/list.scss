@@ -1,0 +1,23 @@
+// Place all the styles related to the list controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//list/new
+.listnewPage{
+  .new_list{
+    max-width: 500px;
+    margin: 100px auto 0;
+    .error_title{
+      color: #e40909;
+    }
+    .listName{
+      margin-bottom: 50px;
+    }
+  }
+}
+.listeditPage {
+  .listForm {
+    max-width: 500px;
+    margin: 100px auto 0;
+  }
+}

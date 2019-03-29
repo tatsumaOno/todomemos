@@ -1,0 +1,14 @@
+<div class="listeditPage">
+  <div class="container">
+    <%= form_with model: @list, url: list_path, html: { class: 'listForm' } do |f| %>
+      <% if @list.errors.full_messages %>
+        <% @list.errors.full_messages.each do |message| %>
+          <%= message %>
+        <% end %>
+      <% end %>
+      <%= f.label :title %>
+      <%= f.text_field :title, class: "form-control listName", placeholder: "リスト名" %>
+      <div class="text-center"><%= f.submit "編集する", class: "btn btn-warning btn-block text-secondary" %></div>
+    <% end %>
+  </div>
+</div>

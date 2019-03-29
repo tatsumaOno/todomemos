@@ -43,6 +43,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'bootstrap','~> 4.1.3'
   gem 'jquery-rails'
+  gem 'font-awesome-sass'
 end
 
 group :development do

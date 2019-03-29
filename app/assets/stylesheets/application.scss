@@ -13,8 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
 @import 'bootstrap';
 @import 'module/signup';
 @import 'module/header';
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 
