@@ -1,0 +1,30 @@
+// Place all the styles related to the card controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//new
+.cardnewPgae {
+  .cardnewForm {
+    max-width: 500px;
+    margin: 70px auto 0;
+    &_title {
+      margin-bottom: 30px;
+    }
+  }
+}
+//show
+.carddetailPage {
+  .cardContents {
+    margin: 60px auto 0;
+    max-width: 600px;
+    &_title {
+      h2 {
+        font-size: 22px;
+      }
+    }
+    &_title, &_memo, &_listStatus {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 30px;
+    }
+  }
+}
