@@ -10,8 +10,6 @@
           <%= link_to(content_tag(:i, '', class: 'fas fa-pen'), edit_list_path(list)) %>
         </div>
         </div>
-        <h1>Ajax#index</h1>
-<p id="hoge">赤色になるよ</p>
         <div class="cardWrapper">
           <% list.cards.each do |card| %>
             <%= link_to list_card_path(list,card), class: "cardDetail_link" do %>
