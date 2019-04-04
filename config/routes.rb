@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :card,except: [:index]
   end
   resources :top,only: [:index]
+
   root 'top#index'
 
 end

@@ -7,22 +7,19 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script>
-      $('#hoge').css('color','red');
-    </script>
   </head>
 
   <body>
     <% if flash[:notice] %>
     <!-- ここにclassを追加する -->
     <div class="alert alert-info"><%= flash[:notice] %></div>
-  <% end %>
-  <% if flash[:alert] %>
-    <!-- ここにclassを追加する -->
-    <div class="alert alert-danger"><%= flash[:alert] %></div>
-  <% end %>
+    <% end %>
+    <% if flash[:alert] %>
+      <!-- ここにclassを追加する -->
+      <div class="alert alert-danger"><%= flash[:alert] %></div>
+    <% end %>
     <% if user_signed_in? %>
-      <%= render partial: 'layouts/header' %>
+       <%= render partial: 'layouts/header' %>
     <% end %>
     <%= yield %>
   </body>

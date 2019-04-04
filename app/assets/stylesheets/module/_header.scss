@@ -50,17 +50,41 @@
 //     display: none;
 //   }
 // }
-.headerlogo{
-  width: 100px;
-  height: 50px;
-}
-.nav-item{
-  padding-left: 30px;
-  a{
-    text-decoration: none;
-    color:#ED4848;
+.navbar{
+  padding: 0 !important;
+  background-color: #35B08B;
+  .headerlogo{
+  width: 200px;
+  height: 200px;
+  opacity: 0.6;
+  &:hover{
+    opacity: 1;
+    }
+  }
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+  // &__list{
+  //   display: flex;
+  // }
+  &__items{
+    display: none;
+    margin-left: -5px;
+    li a{
+      padding: 5px 10px;
+      margin-left: -5px;
+      margin-right: -5px;
+      margin-bottom: -5px;
+      display: block;
+      color: #fff;
+    }
   }
 }
+
+
 
 
 
