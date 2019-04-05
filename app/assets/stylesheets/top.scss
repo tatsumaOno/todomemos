@@ -48,8 +48,10 @@
         max-height: 76vh;
         .cardDetail_link{
           text-decoration: none;
+          z-index: -1;
         }
         .card {
+          z-index: 100;
           margin-bottom: 10px;
           padding: 10px;
           &_title {

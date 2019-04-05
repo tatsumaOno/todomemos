@@ -4,11 +4,12 @@
   <% end %>
   <div>
     <ul class="navbar__list">
-      <li>メニュー
-      <ul class="navbar__items">
-        <li><%= link_to 'ろぐあうと',destroy_user_session_path,method: :delete %></li>
-        <li><%= link_to 'めもづくり',new_list_path %></li>
-      </ul>
+      <li><i class="fas fa-compass"></i>
+        <ul class="navbar__items">
+          <li><%= link_to 'ろぐあうと',destroy_user_session_path,method: :delete%>
+          </li>
+          <li><%= link_to 'めもづくり',new_list_path %></li>
+        </ul>
       </li>
     </ul>
   </div>
