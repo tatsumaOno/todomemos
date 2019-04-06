@@ -3,5 +3,5 @@ class List < ApplicationRecord
   has_many :cards, dependent: :destroy
   validates :title, length: {in: 1..255}
 
-  accepts_nested_attributes_for :cards, allow_destroy: true, update_only: true
+  # accepts_nested_attributes_for :cards, allow_destroy: true, update_only: true
 end

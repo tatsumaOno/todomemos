@@ -24,9 +24,10 @@ class CardController < ApplicationController
 
   def update
     if @card.update_attributes(card_params)
-      render json:{status: 'sucess'}
+      redirect_to :root
     else
-      render json:
+      @card.valid?
+      render :edit
     end
   end
 

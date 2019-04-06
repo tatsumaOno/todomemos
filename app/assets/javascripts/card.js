@@ -18,7 +18,7 @@ $(function(){
   // });
   // $('.list').disableSelection();
 
-Sortable.create('.cardDetail_link');
+// Sortable.create('.cardDetail_link');
   // $( '.card-connectToSortable' ).disableSelection();
 })
 
