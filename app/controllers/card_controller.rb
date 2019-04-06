@@ -23,12 +23,10 @@ class CardController < ApplicationController
   end
 
   def update
-    binding.pry
     if @card.update_attributes(card_params)
-      redirect_to :root
+      render json:{status: 'sucess'}
     else
-      @card.valid?
-      render :edit
+      render json:
     end
   end
 

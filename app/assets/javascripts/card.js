@@ -13,10 +13,12 @@ $(function(){
   //   stop: function(){
   //       $(this).show()//移動後にクローン元（移動済み）を表示させる
   //   }});
-  $( '.cardDetail_link' ).sortable({
-      connectWith: '.cardWrapper'
-  });
-  $('.list').disableSelection();
+  // $( '.cardDetail_link' ).sortable({
+  //     connectWith: '.cardWrapper'
+  // });
+  // $('.list').disableSelection();
+
+Sortable.create('.cardDetail_link');
   // $( '.card-connectToSortable' ).disableSelection();
 })
 

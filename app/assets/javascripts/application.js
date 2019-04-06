@@ -15,6 +15,7 @@
 
 //= require jquery
 //= require jquery-ui
+//= require jquery-ui/sortable
 //= require popper
 //= require bootstrap-sprockets
 //= require activestorage
