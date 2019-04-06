@@ -23,7 +23,6 @@ class CardController < ApplicationController
   end
 
   def update
-    binding.pry
     if @card.update_attributes(card_params)
       redirect_to :root
     else
