@@ -2,7 +2,11 @@
   <div class="profile_wrapper_header">
     <div class="profile_wrapper_header_content">
       <div class="profile_wrapper_header_content_image">
-        a
+        <% if @user.avatar %>
+          <%= image_tag @user.avatar,class: "user_avatar" %>
+        <% else %>
+          <%= image_tag "avatar.png" %>
+        <% end %>
       </div>
       <div class="profile_wrapper_header_content_details">
         <%= @user.name %>
