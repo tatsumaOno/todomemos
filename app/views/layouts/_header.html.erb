@@ -11,6 +11,14 @@
           <li><%= link_to 'めもづくり',new_list_path %></li>
         </ul>
       </li>
+
+      <li><i class="fas fa-user-secret"></i>
+        <ul class="navbar__items">
+          <li><%= link_to 'プロフィール',user_path(current_user)%>
+          </li>
+          <li><%= link_to 'めもづくり',new_list_path %></li>
+        </ul>
+      </li>
     </ul>
   </div>
 </nav>

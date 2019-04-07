@@ -25,3 +25,14 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Project files #
+######################
+*.clpprj
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
