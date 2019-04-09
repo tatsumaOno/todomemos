@@ -22,11 +22,18 @@
       align-items: center;
       // background-color: green;
       &_image{
-        .user_avatar{
+        .profile_avatar{
           width:100px;
           height:100px;
           border-radius: 20px;
           opacity: 0.8;
+        }
+      }
+       &_details{
+        margin-top: 10px;
+        .profile_name{
+          font-size: 40px;
+
         }
       }
     }
