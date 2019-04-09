@@ -2,10 +2,10 @@
   <div class="profile_wrapper_header">
     <div class="profile_wrapper_header_content">
       <div class="profile_wrapper_header_content_image">
-        a
+        <%= image_tag @user.avatar,class: "profile_avatar" %>
       </div>
       <div class="profile_wrapper_header_content_details">
-        <%= @user.name %>
+        <h3 class="profile_name"><%= @user.name %></h3>
       </div>
     </div>
   </div>
