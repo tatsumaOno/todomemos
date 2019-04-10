@@ -8,6 +8,7 @@ class CardController < ApplicationController
   def create
     @card = Card.new(card_params)
     if @card.save
+      @card.create_activity :create, owner: current_user
       redirect_to :root
     else
       @card.valid?

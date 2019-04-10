@@ -7,6 +7,7 @@ class ListController < ApplicationController
   def create
     @list = List.new(list_params)
     if @list.save
+      @list.create_activity :create, owner: current_user
       redirect_to :root
     else
       @list.valid?
