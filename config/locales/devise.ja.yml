@@ -68,3 +68,13 @@ ja:
           password: パスワード
           password_confirmation: パスワード確認
           email: メールアドレス
+  activity:
+    card:
+      create: を作成しました
+      update: を更新しました
+      destroy: を削除しました
+
+    list:
+      create: を作成しました
+      update: を更新しました
+      destroy: を削除されました

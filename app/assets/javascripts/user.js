@@ -1,8 +1,8 @@
-$(document).on('turbolinks:load',function(){
-$('.tabs').tabslet({
-  mouseevent: 'hover',
+$(function(){
+$('.tabs').tabs({
+  mouseevent: 'click',
   attribute: 'href',
-  animation: false
+  animation: true
 });
 
 });

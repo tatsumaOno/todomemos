@@ -17,7 +17,17 @@
         <li><a href="#tab-3">fff</a></li>
       </ul>
       <div id='tab-1'>
-        aaaaaaa
+        <div class="activity_logs">
+          <% @activities.first(15).each do |activity| %>
+            <div class="activity_log">
+              <%= image_tag @user.avatar,class: "activity_log_avatar" %>
+              <span class="activity_name"><%= activity.owner.name %></span>さんが
+              <%= activity.trackable_type %>
+              <%= t("activity.#{activity.key}")%>
+              <hr class="bar_box">
+            <% end %>
+            </div>
+        </div>
       </div>
       <div id='tab-2'>タブ２の中身</div>
       <div id='tab-3'>タブ３の中身</div>
