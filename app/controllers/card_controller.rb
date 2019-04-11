@@ -1,5 +1,5 @@
 class CardController < ApplicationController
-  before_action :set_card, only: [:show,:edit,:update,:destroy]
+  before_action :set_card, only: [:show,:edit,:update,:destroy,:complete]
   def new
     @card = Card.new
     @list = List.find(params[:list_id])
@@ -33,6 +33,13 @@ class CardController < ApplicationController
   end
 
   def destroy
+    @card.destroy
+    redirect_to :root
+  end
+
+  def complete
+    @complete_card = CompleteCard.new();
+    @complete_card.save
     @card.destroy
     redirect_to :root
   end
