@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   resources :list, only: [:new,:create,:edit,:update,:destroy] do
     resources :card,except: [:index] do
       member do
-        get 'preview'
+        delete 'complete'
       end
     end
   end
