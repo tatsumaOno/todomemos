@@ -33,6 +33,8 @@ class CardController < ApplicationController
   end
 
   def destroy
+    @complete_card = CompleteCard.new();
+    @complete_card.save
     @card.destroy
     redirect_to :root
   end
