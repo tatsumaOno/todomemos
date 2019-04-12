@@ -38,7 +38,7 @@ class CardController < ApplicationController
   end
 
   def complete
-    @complete_card = CompleteCard.new();
+    @complete_card = CompleteCard.new(user_id: current_user.id);
     @complete_card.save
     @card.destroy
     redirect_to :root
