@@ -33,6 +33,7 @@
         .profile_name{
           font-size: 40px;
           color: #ffffff;
+          font-family: 'Noto Serif', serif;
         }
       }
     }
@@ -52,8 +53,8 @@
         letter-spacing: 3px;
         list-style: none;
         background-color: rgba(0,0,0,0.6);
-        // padding: 10px 20px;
         box-shadow: 2px 2px 4px gray;
+        font-family: 'Noto Serif', serif;
         &:first-child{
           letter-spacing: 2px;
         }
@@ -72,35 +73,54 @@
         }
       }
     }
+    .activity_logs{
+        min-width: 500px;
+        width: 1000px;
+        margin: 20px auto;
+        .fa-align-right{
+          font-size: 1.5rem;
+          margin-right: 0.5rem;
+          color: rgba(0,0,0,0.7);
+        }
+      }
+    .tab_title{
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom:solid 3px rgba(0,152,152,0.6);
+      padding-right: 4rem;
+      color: rgba(0,0,0,0.7);
+      font-family: 'Noto Serif', serif;
+    }
     #tab-1,#tab-2,#tab-3{
       width: 100%;
       height: 100vh;
+      margin-top: 5rem;
     }
     #tab-1{
-      .activity_logs{
-        min-width: 500px;
-        width: 800px;
-        margin: 20px auto;
-        .activity_log{
-          .activity_log_avatar{
-            border-radius: 50%;
-            width:50px;
-            margin-bottom:10px;
-          }
-          .activity_name{
-            color:rgba(0,152,152,0.6);
-            font-weight:bold;
-          }
-        .bar_box{
-          margin: 10px;
-          // position: relative;
-          height: 1px;
-          border-width: 0;
-          background-image: -webkit-linear-gradient(left,
-          transparent 0%,#283593 50%,transparent 100%);
-          background-image:         linear-gradient(90deg,
-          transparent 0%,#283593 50%,transparent 100%);
+      .activity_log{
+        .activity_log_avatar{
+          border-radius: 50%;
+          width:50px;
+          margin-bottom:10px;
         }
+        .activity_name{
+          color:rgba(0,152,152,0.6);
+          font-weight:bold;
+        }
+        .activity_time{
+          padding-left: 2rem;
+          font-size: 12px;
+          color: rgba(0,0,0,0.7);
+        }
+      .bar_box{
+        margin: 10px;
+        height: 1px;
+        border-width: 0;
+        background-image: -webkit-linear-gradient(left,
+        transparent 0%,#283593 50%,transparent 100%);
+        background-image:         linear-gradient(90deg,
+        transparent 0%,#283593 50%,transparent 100%);
         }
       }
     }

@@ -6,4 +6,5 @@ class User < ApplicationRecord
   has_many :lists, dependent: :destroy
   validates :name, presence: true
   has_one_attached :avatar
+  has_many :complete_cards
 end

@@ -14,23 +14,34 @@
       <ul class='horizontal'>
         <li><a href="#tab-1">profile</a></li>
         <li><a href="#tab-2">card</a></li>
-        <li><a href="#tab-3">fff</a></li>
+        <li><a href="#tab-3">chart</a></li>
       </ul>
-      <div id='tab-1'>
+      <div id="tab-1">
         <div class="activity_logs">
+          <i class="fas fa-align-right"></i>
+          <h2 class="tab_title">Activity log</h2>
           <% @activities.first(15).each do |activity| %>
             <div class="activity_log">
               <%= image_tag @user.avatar,class: "activity_log_avatar" %>
               <span class="activity_name"><%= activity.owner.name %></span>さんが
               <%= activity.trackable_type %>
               <%= t("activity.#{activity.key}")%>
+              <div class="activity_time">
+              <%= activity.created_at.strftime('%Y/%m/%d/ %H:%M')  %>
+              </div>
               <hr class="bar_box">
-            <% end %>
             </div>
+          <% end %>
         </div>
       </div>
-      <div id='tab-2'>タブ２の中身</div>
-      <div id='tab-3'>タブ３の中身</div>
+      <div id="tab-2">afa</div>
+      <div id="tab-3">
+        <div class="activity_logs">
+          <i class="fas fa-align-right"></i>
+          <h2 class="tab_title">Digestibility task</h2>
+          <%= column_chart @complete_cards,colors: ["#2b8"],width: "100%", height: "300px"%>
+        </div>
+      </div>
     </div>
   </div>
 </div>
