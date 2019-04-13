@@ -44,6 +44,7 @@ gem 'public_activity'
 gem "chartkick"
 gem 'rspec-rails'
 gem 'factory_bot_rails'
+gem 'rails-controller-testing'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'devise'
@@ -68,6 +69,7 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem 'faker'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
