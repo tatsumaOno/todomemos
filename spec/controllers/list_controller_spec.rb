@@ -24,15 +24,20 @@ describe ListController do
 end
 
 describe TopController do
+ let(:user) {create(:user)}
   describe 'GET #index' do
+    before do
+      login_user(user)
+    end
     it 'populates an array of list ordered by created_at DESC' do
-        list = create_list(:list, 3)
+        list = create_list(:list, 3,user_id: user.id)
         get :index
-        expect(assigns(:list)).to match(list)
+        expect(assigns(:lists)).to match(list.sort{ |a, b| b.created_at <=> a.created_at})
     end
 
     it 'renders the :index template' do
-
+      get :index
+      expect(response).to render_template :index
     end
   end
 
