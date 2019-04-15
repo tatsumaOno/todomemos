@@ -8,7 +8,7 @@ class TopController < ApplicationController
   end
 
   def search
-    @cards = Card.where('title LIKE(?)',"%#{params[:keyword]}").limit(10)
+    @cards = Card.where('title LIKE(?)',"%#{params[:keyword]}%").limit(10)
     respond_to do |format|
       format.html
       format.json

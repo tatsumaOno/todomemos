@@ -13,6 +13,10 @@
     <% if user_signed_in? %>
        <%= render partial: 'layouts/header' %>
     <% end %>
+    <div class="search-result">
+      <div class="search-result-card">
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
