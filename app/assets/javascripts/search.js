@@ -41,7 +41,6 @@ function appendErrMsgToHTML(msg){
         }else{
             appendErrMsgToHTML("一致するカードがありません")
         }
-        preCard = card
     })
   });
 });
