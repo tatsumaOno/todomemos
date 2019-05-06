@@ -18,7 +18,7 @@
 
         <%= link_to '削除する', list_card_path(@card.list, @card), class: "text-danger delete_btn", method: :delete, data: { confirm: "このカードを削除して大丈夫ですか?" } %>
 
-        <%= link_to '完了する', complete_list_card_path(@card.list, @card), class: "text-success delete_btn", method: :delete, data: { confirm: "このカードを完了して大丈夫ですか?" } %>
+        <%= link_to '完了する', complete_list_card_path(@card.list, @card), class: "text-success delete_btn", method: :delete, data: { confirm: "レベルが上がった!!" } %>
       </div>
     </div>
   </div>

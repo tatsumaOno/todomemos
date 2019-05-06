@@ -1,7 +1,6 @@
 // Place all the styles related to the top controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 //topList
 .topPage{
   width: 100%;
@@ -55,7 +54,7 @@
           margin-bottom: 10px;
           padding: 10px;
           &_title {
-            font-size: 17px;
+            font-size: 17px !important;
           }
           &_detail {
             display: none;

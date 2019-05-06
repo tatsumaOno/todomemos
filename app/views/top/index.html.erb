@@ -14,7 +14,9 @@
           <% list.cards.each do |card| %>
             <%= link_to list_card_path(list,card), class: "cardDetail_link" do %>
             <div class="card">
+              <%= link_to list_card_path(list,card),class: "cardDetail_link" do %>
               <h3 class="card_title"><%= card.title %></h3>
+              <% end %>
               <% if card.memo.size > 0 %>
                 <div class="card_detail is-exist"><i class="fas fa-bars"></i></div>
               <% end %>
