@@ -16,6 +16,10 @@
     <div class="search-result">
     </div>
     <%= yield %>
+    <!-- <audio id="text-successsound" preload="auto">
+    <source src="assets/audios/dorakue.mp3" type="audio/mp3">
+    </audio> -->
+    <%= audio_tag('dorakue.mp3',class: "text-successsound") %>
   </body>
 </html>
 

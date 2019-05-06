@@ -33,6 +33,21 @@
         .profile_name{
           font-size: 40px;
           color: #ffffff;
+          margin: 0;
+          font-family: 'Noto Serif', serif;
+        }
+       }
+       &_level{
+        display: flex;
+        .level{
+          font-size: 2rem;
+          color: #5B5B5B;
+          font-family: 'Noto Serif', serif;
+        }
+        .title{
+          font-size: 2rem;
+          margin-left: 10px;
+          color: #5B5B5B;
           font-family: 'Noto Serif', serif;
         }
       }

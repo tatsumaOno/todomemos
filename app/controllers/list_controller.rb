@@ -20,7 +20,7 @@ class ListController < ApplicationController
   end
 
   def update
-    if @list.update_attributes(list_params)
+    if @list.update(list_params)
       redirect_to :root
     else
       @list.valid?

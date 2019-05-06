@@ -7,4 +7,25 @@ class User < ApplicationRecord
   validates :name, presence: true
   has_one_attached :avatar
   has_many :complete_cards
+  has_many :user
+
+  def levelUp
+    self.level += 1
+  end
+
+  def degree
+    if self.level <= 10
+      self.title = "Knight"
+    elsif 10 < self.level <= 20
+      self.title = "Baron"
+    elsif 20 < self.level <= 30
+      self.title = "Earl"
+    elsif 30 < self.level <= 40
+      self.title = "Duke"
+    else
+      self.title = "Archduke"
+    end
+    self.save
+  end
+
 end

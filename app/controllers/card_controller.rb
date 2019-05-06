@@ -40,13 +40,18 @@ class CardController < ApplicationController
   def complete
     @complete_card = CompleteCard.new(user_id: current_user.id);
     @complete_card.save
+
+    @user = User.find(@card.user.id)
+    @user.levelUp
+    @user.save
+
     @card.destroy
     redirect_to :root
   end
 
 private
   def card_params
-    params.require(:card).permit(:title, :memo, :list_id)
+    params.require(:card).permit(:title, :memo,:list_id).merge(user_id: current_user.id)
   end
   def set_card
     @card = Card.find(params[:id])
